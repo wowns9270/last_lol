@@ -48,7 +48,6 @@ const mainRouter = require('./routes/index');
 
 app.use('/' , mainRouter);
 
-
 app.listen( app.get('port') , ()=>{
     console.log(`성공 ${app.get('port')}`);
 } )
