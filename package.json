@@ -1,0 +1,28 @@
+{
+  "name": "ex1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js i -1",
+    "dev": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
+    "helmet": "^4.3.1",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "pm2": "^4.5.1",
+    "pug": "^3.0.0",
+    "sanitize-html": "^2.3.0"
+  }
+}
