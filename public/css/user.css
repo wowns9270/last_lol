@@ -1,0 +1,43 @@
+body {
+    background-color:ivory;
+    text-align: center;
+}
+
+.ret{
+    margin-top: 50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.a{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.b{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.c{
+    color:teal;
+    font-size: 25px;
+    padding-right: 8px ;
+   
+}
+
+.d{
+    margin-bottom: 10px;
+}
+.b-1{
+    padding-right: 10px ;
+    color:slateblue;
+}
+.b-2{
+    color: red;
+}
+.ttt{
+    margin-bottom: 10px ;
+}

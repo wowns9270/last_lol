@@ -32,17 +32,13 @@ else{
 
 
 app.engine(
-    "hbs",
-    hbs({
-      extname: "hbs",
-      defaultLayout: "layout", // 기본레이아웃 설정
-      // 레이아웃 디렉토리 설정.. 리액트에서 레이아웃 따로 정하면 필요없단다?...
-      layoutsDir: __dirname + "/views/layouts",
-      // 반복적인 html코드가 있다면 아래 지정경로에서 가져다 쓸수 있다.
-      partialsDir: __dirname + "/view/partials"
-    })
-  );
-  app.set('view engine','hbs') //
+  "hbs",
+  hbs({
+    extname: "hbs",
+  })
+);
+app.set("view engine", "hbs");
+app.use(express.static(path.join(__dirname, "public")));
 
 const mainRouter = require('./routes/index');
 

@@ -8,7 +8,9 @@ const router = express.Router();
 
 
 router.get('/' , (req,res) =>{
-    res.render('main');
+    res.render('home', {
+        style : 'home',
+    });
 });
 
 
@@ -30,11 +32,13 @@ router.post('/' , async(req , res) =>{
     //console.log(info.data);
              res.render('user' , {
                 user : info.data[0],
+                style : 'user',
+                all : info.data[0].wins + info.data[0].losses,
             })
         }   
     
     }catch(e){
-        console.log(e);
+        res.render('error');
     }
 });
 
