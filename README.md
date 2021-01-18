@@ -2,6 +2,8 @@
 
 ### node , express , handlebars 
 
+##### 2021 / 2 / 10 까지는 http://3.36.111.172 에서 이용 가능합니다!
+
 ##### .env 파일에 api_key=키 를 입력하셔야 합니다. 
 
 ##### https://developer.riotgames.com/ 에서 임시 키를 발급 받을 수 있고
