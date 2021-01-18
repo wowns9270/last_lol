@@ -1,17 +1,28 @@
-#롤 솔로랭크 전적검색 프로젝트 입니다.
+### 롤 솔로랭크 전적검색 프로젝트 입니다.
 
 ### node , express , handlebars 
 
-## .env 파일에 api_key=키 를 입력하셔야 합니다. 
+##### .env 파일에 api_key=키 를 입력하셔야 합니다. 
 
-## https://developer.riotgames.com/ 에서 임시 키를 발급 받을 수 있고
+##### https://developer.riotgames.com/ 에서 임시 키를 발급 받을 수 있고
 
-## 계속 사용하실려면 정식으로 키를 신청해야 합니다. 임시키는 요청횟수가 제한
-## 되는 것으로 알고 있습니다.
+##### 계속 사용하실려면 정식으로 키를 신청해야 합니다. 임시키는 요청횟수가 제한
+##### 되는 것으로 알고 있습니다.
 
-## clone 후에 npm i 후에 로컬환경에서 볼 수 있습니다.
+##### clone 후에 npm i 후에 로컬환경에서 볼 수 있습니다.
 
-## 현재 start는 배포환경으로 되어 있습니다.
-## package.json의 start를 nodemon app 으로 바꾸시면 로컬환경에서 테스트할 수 있습니다.
+##### 현재 start는 배포환경으로 되어 있습니다.
+##### package.json의 start를 nodemon app 으로 바꾸시면 로컬환경에서 테스트할 수 있습니다.
 
 ### 궁금하신점은 wowns9270@gmail.com으로 메일 주시면 됩니다.
+
+
+## 메인화면
+
+![메인화면](https://user-images.githubusercontent.com/46587806/104879806-e5816000-59a1-11eb-808d-0b121fd01cb8.png)
+
+## 결과화면
+
+![결과화면](https://user-images.githubusercontent.com/46587806/104879918-15c8fe80-59a2-11eb-8b90-f6c6093d6d9d.png)
+
+### 감사합니다!
