@@ -21,10 +21,13 @@
 
 ## 메인화면
 
-![메인화면](https://user-images.githubusercontent.com/46587806/104879806-e5816000-59a1-11eb-808d-0b121fd01cb8.png)
+![화면 캡처 2021-01-21 160623](https://user-images.githubusercontent.com/46587806/105315485-bddd0280-5c02-11eb-9201-6bf1f435263b.png)
+
 
 ## 결과화면
 
-![결과화면](https://user-images.githubusercontent.com/46587806/104879918-15c8fe80-59a2-11eb-8b90-f6c6093d6d9d.png)
+![화면 캡처 2021-01-21 160751](https://user-images.githubusercontent.com/46587806/105315563-d77e4a00-5c02-11eb-8ae8-384615722491.png)
+
+
 
 ### 감사합니다!

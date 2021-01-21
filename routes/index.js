@@ -22,24 +22,56 @@ router.post('/' , async(req , res) =>{
         //console.log(newId);
         
         const info = await axios.get(`https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/${newId.data.id}?api_key=${process.env.api_key}`);
+        
+        //console.log(info.data[0]);
+        let currentgame = {
+            color :"green" ,
+            text : "In Game"
+        };
+        
+        const current = await axios.get(`https://kr.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/${newId.data.id}?api_key=${process.env.api_key}`)
+        // .then( res=>{
+        //     console.log(res.data);
+        // })
+        .catch( res =>{
+            if (res.response.status === 404){
+                return currentgame = {
+                    color :"red" ,
+                    text : "Not In Game"
+                };
+            }
+        }) 
+
+        //console.log(currentgame);
 
         //console.log(info.data[0]);
-
+        
         if(info.data[0] === undefined){
             res.render('not_user');
         }
         else{
-    //console.log(info.data);
+            
+            
+            let a = [];
+
+            info.data.map( item =>{
+
+                if(item.queueType === 'RANKED_SOLO_5x5'){
+                    a = item;
+                }
+            })
+            
              res.render('user' , {
-                user : info.data[0],
+                 user : a,
                 style : 'user',
-                all : info.data[0].wins + info.data[0].losses,
+                all : a.wins + a.losses,
+                current : currentgame,
             })
         }   
-    
     }catch(e){
         res.render('error');
     }
+    
 });
 
 

@@ -1,5 +1,5 @@
 body {
-    background-color:ivory;
+    background-color:#eee;
     text-align: center;
 }
 
@@ -14,6 +14,16 @@ body {
 .a{
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+.aaa{
+    font-size: 30px;
+    border: 0;
+    outline: none;
+    color: whitesmoke;
+
+    border-radius: 10px;
+    
 }
 
 .b{

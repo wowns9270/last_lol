@@ -1,23 +1,49 @@
 body {
-    background-color:ivory;
+    background-color:#eee;
     text-align: center;
 }
 
 .ret{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    position: relative;
+    margin-top: 10%;
+    padding-bottom: 20px;
+  
+}
+
+.ret2{
+    display: inline-block;
+    width: 600px;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 40px;
 }
 
 .inp{
     width: 200px;
-    height: 25px;
+    height: 30px;
     margin-right: 10px;
     font-size: 20px;
+    border-radius:5px;
 }
 
 .btn{
-    font-size : 20px;
-    color: brown;
+    font-size : 25px;
+    color:black;
+    background-color: #4d90fe;
+    border-radius: 8px;
+    outline: none;
+    height: 40px;   
+    border: 0;
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+.footer {
+    font-size: 15px;
 }

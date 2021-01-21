@@ -44,6 +44,15 @@ const mainRouter = require('./routes/index');
 
 app.use('/' , mainRouter);
 
+app.get('/about' ,  (req , res)=>{
+
+    res.render('about' , {
+
+    })
+  })
+
 app.listen( app.get('port') , ()=>{
-    console.log(`성공 ${app.get('port')}`);
+   // console.log(`성공 ${app.get('port')}`);
 } )
+
+//cross-env NODE_ENV=production PORT=8080 pm2 start app.js
