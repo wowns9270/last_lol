@@ -4,11 +4,9 @@ body {
 }
 
 .ret{
-    margin-top: 50px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    position: relative;
+    margin-top: 10%;
+    padding-bottom: 20px;
 }
 
 .a{
@@ -50,4 +48,30 @@ body {
 }
 .ttt{
     margin-bottom: 10px ;
+}
+
+.back{
+    font-size : 25px;
+    color:black;
+    background-color: #4d90fe;
+    border-radius: 8px;
+    outline: none;
+    height: 40px;   
+    border: 0;
+    cursor: pointer;
+
+    transition: all 0.5s;
+    margin-bottom: 40px;
+}
+
+.back:hover{
+    transform: scale(1.1);
+}
+
+.ret2{
+    display: inline-block;
+    width: 600px;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
