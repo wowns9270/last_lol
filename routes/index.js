@@ -50,7 +50,7 @@ router.post('/' , async(req , res) =>{
             res.render('not_user');
         }
         else{
-            
+            s
             
             let a = [];
 

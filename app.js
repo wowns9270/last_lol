@@ -44,12 +44,18 @@ const mainRouter = require('./routes/index');
 
 app.use('/' , mainRouter);
 
+//const aboutRouter = require('./routes/about');
+
 app.get('/about' ,  (req , res)=>{
 
-    res.render('about' , {
+     res.render('about' , {
 
-    })
-  })
+     })
+   })
+
+//app.use('/about' , aboutRouter);
+
+
 
 app.listen( app.get('port') , ()=>{
    // console.log(`성공 ${app.get('port')}`);
