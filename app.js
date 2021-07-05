@@ -10,12 +10,9 @@ const hpp = require('hpp');
 
 
 let indexRouter = require('./routes/index');
-let app = express(); // 연결?
+let app = express(); 
 
 app.set( 'port' , process.env.PORT || 3000);
-
-//app.use(morgan('dev'));
-
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 
@@ -44,7 +41,6 @@ const mainRouter = require('./routes/index');
 
 app.use('/' , mainRouter);
 
-//const aboutRouter = require('./routes/about');
 
 app.get('/about' ,  (req , res)=>{
 
@@ -53,12 +49,10 @@ app.get('/about' ,  (req , res)=>{
      })
    })
 
-//app.use('/about' , aboutRouter);
-
 
 
 app.listen( app.get('port') , ()=>{
-   // console.log(`성공 ${app.get('port')}`);
+    console.log(`성공 ${app.get('port')}`);
 } )
 
 //cross-env NODE_ENV=production PORT=8080 pm2 start app.js
