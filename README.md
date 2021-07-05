@@ -1,33 +1,52 @@
-### 롤 솔로랭크 전적검색 프로젝트 입니다.
+#  :tada: 프로젝트 개요
+- 게임(league of legend) 전적검색 사이트
 
-### node , express , handlebars 
-
-##### 2021 / 2 / 10 까지는 http://3.36.111.172 에서 이용 가능합니다!
-
-##### .env 파일에 api_key=키 를 입력하셔야 합니다. 
-
-##### https://developer.riotgames.com/ 에서 임시 키를 발급 받을 수 있고
-
-##### 계속 사용하실려면 정식으로 키를 신청해야 합니다. 임시키는 요청횟수가 제한
-##### 되는 것으로 알고 있습니다.
-
-##### clone 후에 npm i 후에 로컬환경에서 볼 수 있습니다.
-
-##### 현재 start는 배포환경으로 되어 있습니다.
-##### package.json의 start를 nodemon app 으로 바꾸시면 로컬환경에서 테스트할 수 있습니다.
-
-### 궁금하신점은 wowns9270@gmail.com으로 메일 주시면 됩니다.
+# :apple: 사이트 주소
+- http://3.36.63.106
 
 
-## 메인화면
+# :zap: 팀 멤버
+- 이재준
+
+# :hammer: 환경설정 및 실행 방법
+```
+git clone https://github.com/wowns9270/last_lol.git
+
+cd last_lol
+
+npm i
+
+-> 리그오브레전드의 api를 발급 받아야 합니다. (과정 생략)
+
+발급받은 api 키를 사용하기 위해 .env 파일을 만들고
+api_key={~~~}  {}는 생략
+
+-> package.json 부분  script . start 부분 "nodemon app"으로 수정
+-> 로컬에서 실행가능
+```
+
+# :package: 사용기술
+** frontend **
+- html
+- css
+- javascript
+
+** backend **
+- node.js
+- express.js
+- handlebar.js
+
+** 배포 **
+aws lightsail
+
+
+### main
 
 ![화면 캡처 2021-01-21 160623](https://user-images.githubusercontent.com/46587806/105315485-bddd0280-5c02-11eb-9201-6bf1f435263b.png)
 
 
-## 결과화면
+### info
 
 ![화면 캡처 2021-01-21 160751](https://user-images.githubusercontent.com/46587806/105315563-d77e4a00-5c02-11eb-8ae8-384615722491.png)
 
 
-
-### 감사합니다!

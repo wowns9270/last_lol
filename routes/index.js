@@ -18,21 +18,16 @@ router.post('/' , async(req , res) =>{
     try{
 
         const newId = await axios.get(`https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/${encodeURI(req.body.id)}?api_key=${process.env.api_key}`);
-        
-        //console.log(newId);
-        
+    
         const info = await axios.get(`https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/${newId.data.id}?api_key=${process.env.api_key}`);
-        
-        //console.log(info.data[0]);
+
         let currentgame = {
             color :"green" ,
             text : "In Game"
         };
         
         const current = await axios.get(`https://kr.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/${newId.data.id}?api_key=${process.env.api_key}`)
-        // .then( res=>{
-        //     console.log(res.data);
-        // })
+
         .catch( res =>{
             if (res.response.status === 404){
                 return currentgame = {
@@ -42,15 +37,11 @@ router.post('/' , async(req , res) =>{
             }
         }) 
 
-        //console.log(currentgame);
-
-        //console.log(info.data[0]);
         
         if(info.data[0] === undefined){
             res.render('not_user');
         }
         else{
-            s
             
             let a = [];
 
@@ -69,6 +60,7 @@ router.post('/' , async(req , res) =>{
             })
         }   
     }catch(e){
+        console.log(e);
         res.render('error');
     }
     
