@@ -37,7 +37,7 @@ api_key={~~~}  {}는 생략
 - handlebar.js
 
 ** 배포 **
-aws lightsail
+- aws lightsail
 
 
 ### main
