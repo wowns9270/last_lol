@@ -22,6 +22,7 @@ if(process.env.NODE_ENV === 'production'){
     app.use(morgan('combined'));
     app.use(helmet({contentSecurityPolicy : false}));
     app.use(hpp());
+    console.log("gigi")
 }
 else{
     app.use(morgan('dev'));
@@ -55,4 +56,4 @@ app.listen( app.get('port') , ()=>{
     console.log(`성공 ${app.get('port')}`);
 } )
 
-//cross-env NODE_ENV=production PORT=8080 pm2 start app.js
+//cross-env NODE_ENV=production PORT=80 pm2 start app.js
