@@ -1,49 +1,47 @@
 body {
-    background-color:#eee;
-    text-align: center;
+  background-color: #eee;
+  text-align: center;
 }
 
-.ret{
-    position: relative;
-    margin-top: 10%;
-    padding-bottom: 20px;
-  
+.ret {
+  position: relative;
+  margin-top: 11%;
+  padding-bottom: 20px;
 }
 
-.ret2{
-    display: inline-block;
-    width: 80%;
-    padding-top: 20px;
-    font-size: 15px;
-    padding-bottom: 40px;
+.ret2 {
+  display: inline-block;
+  width: 80%;
+  padding-top: 20px;
+  font-size: 15px;
+  padding-bottom: 40px;
 }
 
-.inp{
-    width: 200px;
-    height: 30px;
-    margin-right: 10px;
-    font-size: 20px;
-    border-radius:5px;
+.inp {
+  width: 200px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
-.btn{
-    font-size : 25px;
-    color:black;
-    background-color: #4d90fe;
-    border-radius: 8px;
-    outline: none;
-    height: 40px;   
-    border: 0;
-    cursor: pointer;
+.btn {
+  font-size: 25px;
+  color: black;
+  background-color: #4d90fe;
+  border-radius: 8px;
+  outline: none;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
 
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.btn:hover{
-    transform: scale(1.1);
+.btn:hover {
+  transform: scale(1.1);
 }
-
 
 .footer {
-    font-size: 15px;
+  font-size: 15px;
 }

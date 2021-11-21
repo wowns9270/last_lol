@@ -4,11 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
+
     "start": "cross-env NODE_ENV=production PORT=8080 pm2 start app.js",
-=======
-    "start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js",
->>>>>>> test
+
     "dev": "nodemon app"
   },
   "author": "",

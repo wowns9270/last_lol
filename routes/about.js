@@ -7,7 +7,11 @@ require('dotenv').config();
 
 app.get('/about' ,  (req , res)=>{
 
-    res.render('about' , {
 
-    })
+  console.log("ok test");
+
+
+  res.render('about' , {
+  
+})
   })
