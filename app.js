@@ -20,7 +20,10 @@ if (process.env.NODE_ENV === "production") {
   app.use(morgan("combined"));
   app.use(helmet({ contentSecurityPolicy: false }));
   app.use(hpp());
-  console.log("gigi");
+  console.log("gigidkdkddk");
+  console.log("gigidkdkddk");
+  console.log("gigidkdkddk");
+  console.log("gigidkdkddk");
 } else {
   app.use(morgan("dev"));
 }
